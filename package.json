@@ -1,0 +1,31 @@
+{
+  "name": "RESTyList",
+  "version": "1.0.0",
+  "description": "A todo list API for people with better things to do.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LPGhatguy/RESTyList"
+  },
+  "keywords": [
+    "REST",
+    "JSON",
+    "Sauna",
+    "Undeniably",
+    "Awesome"
+  ],
+  "author": "Lucien Greathouse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LPGhatguy/RESTyList/issues"
+  },
+  "homepage": "https://github.com/LPGhatguy/RESTyList",
+  "engines": "node >= 0.10.0",
+  "dependencies": {
+    "sauna": "^0.1.2"
+  }
+}
