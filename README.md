@@ -29,7 +29,7 @@ From start to finish on a fresh DigitalOcean Ubuntu 14.04 server, the applicatio
 ```bash
 apt-get update
 apt-get install nodejs npm git mongodb
-git clone RESTyList
+git clone https://github.com/LPGhatguy/RESTyList.git
 cd RESTyList
 
 npm install
