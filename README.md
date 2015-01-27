@@ -32,7 +32,10 @@ apt-get install nodejs npm git mongodb
 git clone RESTyList
 cd RESTyList
 
+npm install
+
 mongod --fork --dbpath /var/lib/mongodb --logpath /var/log/mongodb.log --logappend
+screen -S "RESTyList"
 nodejs index.js
 ```
 
@@ -49,13 +52,13 @@ These requests are the same:
 - `POST URL/api/items/delete?id=5`
 
 Create item:
-- `curl -X POST --data "{\"title\":\"Test\", \"desc\":\"Testing Item #1\", complete:false}" URL/api/items`
+- `curl -X POST --data "{\"title\":\"Test\", \"description\":\"Testing Item #1\", \"complete\":false}" URL/api/items`
 
 Read item:
 - `curl -X GET URL/api/items?id=ID`
 
 Update item:
-- `curl -X PUT --data "{\"title\":\"Test Updated\", description:\"Testing Item (Updated)\", \"complete\":false}" URL/api/items?id=ID`
+- `curl -X PUT --data "{\"title\":\"Test Updated\", \"description\":\"Testing Item (Updated)\", \"complete\":false}" URL/api/items?id=ID`
 
 Delete item:
 - `curl -X DELETE URL/api/items?id=ID`
@@ -75,7 +78,7 @@ or
 - `curl -X POST URL/api/items/uncomplete?id=ID`
 
 Alternatively, you can use an update command, but it's a little less semantic:
-- `curl -X PUT --data "{complete: true}" URL/api/items?id=ID`
+- `curl -X PUT --data "{\"complete\": true}" URL/api/items?id=ID`
 
 ## Potential Improvements
 Desirable additional features include:
