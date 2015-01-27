@@ -26,6 +26,7 @@
   "homepage": "https://github.com/LPGhatguy/RESTyList",
   "engines": "node >= 0.10.0",
   "dependencies": {
-    "sauna": "^0.1.2"
+    "sauna": ">=0.2.3",
+    "mongoose": "3.x.x"
   }
 }
