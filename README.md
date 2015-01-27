@@ -24,6 +24,18 @@ When testing, I use a Sublime Text 3 build system:
 ## API
 See [DESIGN.md](DESIGN.md) for an abstract API definition.
 
+## Deployment
+From start to finish on a fresh DigitalOcean Ubuntu 14.04 server, the application can be run with:
+```bash
+apt-get update
+apt-get install nodejs npm git mongodb
+git clone RESTyList
+cd RESTyList
+
+mongod --fork --dbpath /var/lib/mongodb --logpath /var/log/mongodb.log --logappend
+nodejs index.js
+```
+
 ## cURL Tests:
 *Tested with cURL 7.40.0 on Windows*
 
